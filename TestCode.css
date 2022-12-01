@@ -1,0 +1,38 @@
+body {
+  height: 100vh;
+  display: flex;
+}
+.quat {
+  position: relative;
+}
+.cayquat_khung {
+  margin-top: 30px;
+}
+.cayquat_canh {
+  position: absolute;
+  top: 144px;
+  left: 206px;
+}
+.cayquat_canh img {
+  width: 484px;
+  transform-origin: center center;
+}
+.dot {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 749px;
+  left: 352px;
+}
+.cayquat_canh:hover {
+  cursor: pointer;
+  animation: test ease-in 100s;
+}
+@keyframes test {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360000deg);
+  }
+}

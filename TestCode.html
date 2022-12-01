@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blower online by KT.H</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+      }
+      .blower {
+        position: relative;
+      }
+      .blower_frame {
+        margin-top: 30px;
+      }
+      .blower_wing {
+        position: absolute;
+        top: 144px;
+        left: 206px;
+      }
+      .blower_wing img {
+        width: 484px;
+        transform-origin: center center;
+      }
+      .dot {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        top: 749px;
+        left: 352px;
+      }
+      .blower_wing:hover {
+        cursor: pointer;
+        animation: test ease-in 100s;
+      }
+      @keyframes test {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360000deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blower">
+      <div class="blower_frame">
+        <img src="./frame.jpg" alt="" />
+      </div>
+      <div class="blower_wing">
+        <div class="dot"></div>
+        <img src="./wing.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
